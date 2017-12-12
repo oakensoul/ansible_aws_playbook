@@ -2,6 +2,7 @@ FROM python:alpine3.6
 
 RUN \
   apk -v --update add \
+    bash \
     curl \
     openssh-client \
     py-setuptools \
