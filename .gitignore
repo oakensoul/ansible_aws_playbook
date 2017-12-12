@@ -1,7 +1,22 @@
+# Customized gitignore content
+.idea/
+.aws/
+.vagrant/
+vagrant.retry
+
+# MacOS
+.DS_Store*
+
+# REST API
+swagger.json
+
+# --- STANDARD GITHUB PYTHON .gitignore ---
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -99,3 +114,4 @@ ENV/
 
 # mypy
 .mypy_cache/
+
