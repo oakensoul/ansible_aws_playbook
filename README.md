@@ -2,6 +2,8 @@
 
 Forked from: https://github.com/philm/ansible_playbook
 
+Great article here: https://medium.com/@tech_phil/running-ansible-inside-docker-550d3bb2bdff
+
 Executes ansible-playbook command against an externally mounted set of Ansible playbooks
 
 ```
