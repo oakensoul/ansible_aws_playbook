@@ -1,15 +1,20 @@
 FROM python:alpine3.6
 
 RUN \
-  apk-install \
+  apk -v --update add \
     curl \
     openssh-client \
+    py-setuptools \
+    py-dateutil \
+    py-httplib2 \
+    py-jinja2 \
+    py-paramiko \
+    py-yaml \
     ansible \
-    aws-cli \
-    py-boto \
     tar && \
-  pip install --upgrade pip python-keyczar && \
   rm -rf /var/cache/apk/*
+
+RUN pip install boto && pip install boto3 && pip install awscli
 
 RUN mkdir /etc/ansible/ /ansible
 RUN echo "[local]" >> /etc/ansible/hosts && \
