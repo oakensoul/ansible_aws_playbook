@@ -11,11 +11,10 @@ RUN \
     py-jinja2 \
     py-paramiko \
     py-yaml \
-    ansible \
     tar && \
   rm -rf /var/cache/apk/*
 
-RUN pip install boto && pip install boto3 && pip install awscli
+RUN pip install boto && pip install boto3 && pip install awscli && pip install ansible
 
 RUN mkdir /etc/ansible/ /ansible
 RUN echo "[local]" >> /etc/ansible/hosts && \
