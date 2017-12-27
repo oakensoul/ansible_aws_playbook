@@ -6,14 +6,14 @@ RUN \
     curl \
     openssh-client \
     py-setuptools \
+    python \
+    py-pip2 \
+    python-dev \
     py-dateutil \
     py-httplib2 \
     py-jinja2 \
     py-paramiko \
     py-yaml \
-    python \
-    python-dev \
-    py-pip2 \
     make \
     gcc \
     tar && \
