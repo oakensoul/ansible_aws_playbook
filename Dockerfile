@@ -5,9 +5,12 @@ RUN \
     bash \
     curl \
     openssh-client \
+    musl-dev \
+    libffi-dev \
+    openssl-dev \
     py-setuptools \
     python \
-    py-pip2 \
+    py-pip \
     python-dev \
     py-dateutil \
     py-httplib2 \
