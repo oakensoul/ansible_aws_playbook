@@ -22,7 +22,7 @@ RUN \
     tar && \
   rm -rf /var/cache/apk/*
 
-RUN pip install ansible && pip install boto3 && pip install awscli
+RUN pip install ansible && pip install boto3 && pip install boto && pip install awscli
 
 RUN mkdir /etc/ansible/ /ansible
 RUN echo "[local]" >> /etc/ansible/hosts && \
